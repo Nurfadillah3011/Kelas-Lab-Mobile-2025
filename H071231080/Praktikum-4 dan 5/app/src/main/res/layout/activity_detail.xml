@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#70887b">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background"
+            android:elevation="8dp"
+            android:padding="24dp"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center_horizontal"
+            android:backgroundTint="#F6F3DD">
+
+            <ImageView
+                android:id="@+id/ivCover"
+                android:layout_width="220dp"
+                android:layout_height="320dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/book_default"
+                android:contentDescription="Book Cover"
+                android:layout_gravity="center_horizontal"
+                android:elevation="4dp"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="#222"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvAuthor"
+                android:textColor="#607d8b"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:gravity="left"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvYear"
+                android:textColor="#789262"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:gravity="left"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvGenre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/genre_background"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:layout_gravity="left"/>
+
+            <TextView
+                android:id="@+id/tvBlurb"
+                android:textColor="#37474F"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"/>
+
+            <Button
+                android:id="@+id/btnLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:backgroundTint="#f0c366"
+                android:textColor="#222"
+                android:layout_gravity="right"
+                android:layout_marginTop="24dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:drawableLeft="@drawable/ic_heart"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
