@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#161515"
+    tools:context=".DetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="24dp">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/back"
+                android:contentDescription="Back" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                android:background="@color/black">
+
+                <LinearLayout
+                    android:background="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/iv_character_detail"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="Character image"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/placeholder_images"
+                        android:background="@android:color/darker_gray"
+                        android:clipToOutline="true"
+                        android:outlineProvider="background"
+                        android:layout_marginBottom="16dp"
+                        android:shape="oval" />
+
+                    <TextView
+                        android:id="@+id/tv_character_name_detail"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:text="Character Name"
+                        android:textColor="#B38FFF"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="4dp"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/tv_status"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Status: Unknown"
+                        android:textColor="#EEFF00"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="4dp" />
+
+                    <TextView
+                        android:id="@+id/tv_species_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Species: Human"
+                        android:textColor="#B38FFF"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="4dp" />
+
+                    <TextView
+                        android:id="@+id/tv_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Gender: Male"
+                        android:textColor="#B38FFF"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="8dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                android:background="@android:color/white">
+
+                <LinearLayout
+                    android:background="@color/black"
+                    android:layout_width="match_parent"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Origin"
+                        android:textColor="#6A4FB6"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:letterSpacing="0.03" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#E0DFF5"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:id="@+id/tv_origin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Earth"
+                        android:textColor="#7F6AA2"
+                        android:textSize="16sp"
+                        android:lineSpacingExtra="2dp" />
+
+                    <TextView
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Location"
+                        android:textColor="#6A4FB6"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:letterSpacing="0.03" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#E0DFF5"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:id="@+id/tv_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Citadel of Ricks"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#7F6AA2"
+                        android:textSize="16sp"
+                        android:lineSpacingExtra="2dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/btn_reload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_reload"
+        android:contentDescription="Reload"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:visibility="gone" />
+
+
+</FrameLayout>
