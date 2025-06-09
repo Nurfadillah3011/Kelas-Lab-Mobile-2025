@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LabPraktikum08</string>
+    <string name="judul">Judul</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="save">Save</string>
+    <string name="change">Change</string>
+    <string name="delete">Delete</string>
+</resources>
